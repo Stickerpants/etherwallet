@@ -15,13 +15,13 @@ x_TXFee                     : 'Tr.avgift',
 x_TxHash                    : 'Tr.hash',
 
 /* Check TX Status */
-NAV_CheckTxStatus           : 'Sjekk tr.status',
-NAV_TxStatus                : 'Tr.status',
+NAV_CheckTxStatus           : 'Sjekk transaksjonsstatus',
+NAV_TxStatus                : 'Transaksjonsstatus',
 tx_Details                  : 'Transaksjonsdetaljer',
 tx_Summary                  : 'I perioder med høy aktivitet (som f.eks. under ICO-er), kan transaksjoner stå på vent i flere timer, og i verste fall i flere dager. Dette verktøyet har som mål å gi deg muligheten til å finne og "avbryte" / erstatte disse transaksjonene. ** Dette er ikke vanligvis noe du kan gjøre. Det bør ikke stoles på, og vil bare kunne fungere når det ligger mange transaksjoner i kø. [Vennligst les mer om dette verktøyet her.](https://myetherwallet.groovehq.com/knowledge_base/topics/how-can-i-check-on-the-status-of-my-transaction-can-i-cancel-override-overwrite-replace-or-do-anything-once-a-transaction-has-been-sent)**',
 tx_notFound                 : 'Transaksjon ikke funnet',
 tx_notFound_1               : 'Denne transaksjonen finnes ikke i transaksjonskøen til noden du er tilkoblet.',
-tx_notFound_2               : 'Hvis du nettopp har sendt transaksjonen, vennligst vent 15 sekunder og trykk "Sjekk tr.status"-knappen igjen. ',
+tx_notFound_2               : 'Hvis du nettopp har sendt transaksjonen, vennligst vent 15 sekunder og trykk "Sjekk transaksjonsstatus"-knappen igjen. ',
 tx_notFound_3               : 'Den kan fortsatt befinne seg i transaksjonskøen til en annen node, i påvente av å bli behandlet (inkludert i blokkjeden). ',
 tx_notFound_4               : 'Bruk rullegardinmenyen øverst til høyre og velg en annen ETH-node. (f.eks. `ETH (Etherscan.io)` eller `ETH (Infura.io)` eller `ETH (MyEtherWallet)`), og sjekk igjen.',
 tx_foundInPending           : 'Ventende transaksjon funnet',
@@ -41,7 +41,7 @@ GEN_Help_4                  : 'Guider & FAQ',
 GEN_Help_5                  : 'Hvordan opprette en lommebok',
 GEN_Help_6                  : 'Komme i gang',
 GEN_Help_7                  : 'Ta godt vare på det · Lag en sikkerhetskopi · Ikke del den med noen · Ikke mist det · Det kan ikke gjenopprettes hvis du mister det.',
-GEN_Help_8                  : 'Lastes ikke filen ned? ', 
+GEN_Help_8                  : 'Lastes ikke filen ned? ',
 GEN_Help_9                  : 'Prøv å bruke Google Chrome ',
 GEN_Help_10                 : 'Høyreklikk & velg "lagre linken som". Filnavn: ',
 GEN_Help_11                 : 'Ikke åpne denne filen på datamaskinen din ',
@@ -57,10 +57,10 @@ GEN_Help_20                 : 'Kald-lagring',
 GET_ConfButton              : 'Jeg forstår. Fortsett. ',
 GEN_Label_5                 : 'Lagre din `Private Nøkkel`. ',
 GEN_Unlock                  : 'Lås opp lommeboken for å se adressen. ',
-GAS_PRICE_Desc              : 'Gas-pris er beløpet du betaler per gas-enhet. `Transaksjonsavgift = gas-pris * gas-grense` & betales til "miner-ene" får å inkludere transaksjonen din i en blokk. Høyere gas-pris = raskere transaksjon, men dyrere. Standardinnstillingen er `21 GWEI`. ',
-GAS_LIMIT_Desc              : 'Gas-grense er mengden gas som sendes med transaksjonen din. `Tr.avg.` = gas-pris * gas-grense & betales til "miner-ene" får å inkludere transaksjonen din i en blokk. Å øke dette tallet vil ikke få gjennom transaksjonen din raskere. Ulike typer transaksjoner krever ulik mengde gas. F.eks. koster det `21 000` å sende ETH og ~`200 000` å sende tokens. ',
+GAS_PRICE_Desc              : 'Gas-pris er beløpet du betaler per gas-enhet. `Transaksjonsavgift = gas-pris * gas-grense` & betales til "utgraverne" for å inkludere transaksjonen din i en blokk. Høyere gas-pris = raskere transaksjon, men dyrere. Standardinnstillingen er `21 GWEI`. ',
+GAS_LIMIT_Desc              : 'Gas-grense er mengden gas som sendes med transaksjonen din. `Tr.avg.` = gas-pris * gas-grense & betales til "utgraverne" for å inkludere transaksjonen din i en blokk. Å øke dette tallet vil ikke få gjennom transaksjonen din raskere. Ulike typer transaksjoner krever ulik mengde gas. F.eks. koster det `21 000` å sende ETH og ~`200 000` å sende tokens. ',
 NONCE_Desc                  : '"Nonce" er antall transaksjoner som noensinne har blitt sendt fra en gitt adresse. Det sikrer at transaksjoner sendes i riktig rekkefølge, og ikke mer enn én gang. ',
-TXFEE_Desc                  : 'Transaksjonsavgiften betales til "miner-ene" får å inkludere transaksjonen din i en blokk. Det er `gas-grense` * `gas-pris`. [Du kan regne om GWEI -> ETH her](https://www.myetherwallet.com/helpers.html)',
+TXFEE_Desc                  : 'Transaksjonsavgiften betales til "utgraverne" for å inkludere transaksjonen din i en blokk. Det er `gas-grense` * `gas-pris`. [Du kan regne om GWEI -> ETH her](https://www.myetherwallet.com/helpers.html)',
 
 
 
@@ -87,7 +87,7 @@ NAV_YourWallets             : 'Dine lommebøker ',
 
 /* General */
 x_Access                    : 'Åpne ',
-x_AddessDesc                : 'Adressen din, også kalt `Kontonummer` eller `Offentlig nøkkel`, er den informasjonen du deler med folk slik at de kan sende deg ether eller tokens. Finn det fargerike adresse-ikonet. Vær sikker på at det stemmer overens med ikonet på papir-lommeboken din, og ellers når du oppgir adressen noe sted. ',
+x_AddessDesc                : 'Din `adresse` kalles også for `kontonummer` eller `offentlig nøkkel`. Det er denne du sender til folk så de kan sende deg Ether eller Tokens. Find det fargerike adresse-ikonet. Forsikre deg om at det er likt med ikonet på papir-lommeboken din og ellers hver gang du oppgir adressen din. ',
 x_Address                   : 'Din adresse ',
 x_Cancel                    : 'x_Annuler ',
 x_CSV                       : 'CSV-fil (ukryptert) ',
@@ -97,6 +97,7 @@ x_JsonDesc                  : 'Dette er det ukrypterte JSON-formatet av din priv
 x_Keystore                  : 'Keystore-fil (UTC / JSON · Anbefalt · Kryptert) ',
 x_Keystore2                 : 'Keystore-fil (UTC / JSON) ',
 x_KeystoreDesc              : 'Denne Keystore-filen samsvarer med formatet som brukes av Mist, så du enkelt kan importere den i fremtiden. Det er den anbefalte filen å laste ned og sikkerhetskopiere. ',
+x_MetaMask                  : 'Metamask / Mist ',
 x_Mnemonic                  : 'Mnemonisk Frase ',
 x_ParityPhrase              : 'Parity-frase ',
 x_Password                  : 'Passord ',
@@ -133,6 +134,8 @@ sidebar_TransHistory        : 'Transaksjonshistorikk ',
 sidebar_donation            : 'MyEtherWallet er en gratis åpen-kildekode-service som er dedikert til å ivareta ditt personvern og din sikkerhet. Jo flere donasjoner vi får, jo mer tid kan vi bruke til å lage nye funksjoner, lytte til tilbakemeldinger, og gi deg det du ønsker. Vi er bare to personer som prøver å forandre verden. Vil du hjelpe oss? ',
 sidebar_donate              : 'Doner ',
 sidebar_thanks              : 'TAKK!!! ',
+sidebar_DisplayOnTrezor     : 'Display address on TREZOR',
+sidebar_DisplayOnLedger     : 'Display address on Ledger',
 
 /* Decrypt Panel */
 decrypt_Access              : 'Hvordan ønsker du å få tilgang til lommeboken din? ',
@@ -148,6 +151,10 @@ ADD_Radio_2_short           : 'VELG LOMMEBOK-FIL... ',
 ADD_Radio_3                 : 'Lim/skriv inn din private nøkkel ',
 ADD_Radio_4                 : 'Legg til en konto for overvåkning ',
 ADD_Radio_5_Path            : 'Velg "HD derivation" variant ',
+ADD_Radio_5_woTrezor        : '(Jaxx, Metamask, Exodus, imToken)',
+ADD_Radio_5_withTrezor      : '(Jaxx, Metamask, Exodus, imToken, TREZOR)',
+ADD_Radio_5_PathAlternative : '(Ledger)',
+ADD_Radio_5_PathTrezor      : '(TREZOR)',
 ADD_Radio_5_PathCustom      : '(tilpasset) ',
 ADD_Radio_5                 : 'Lim inn/tast din mnemoniske frase ',
 ADD_Label_2                 : 'Lag et kallenavn: ',
@@ -158,19 +165,27 @@ ADD_Label_5                 : 'Oppgi adressen ',
 ADD_Label_6                 : 'Lås opp lommeboen din ',
 ADD_Label_6_short           : 'Lås opp ',
 ADD_Label_7                 : 'Legg til konto ',
+ADD_Label_8                 : 'Password (optional): ',
 
 /* Hardware wallets */
-x_Ledger                    : 'Ledger Nano S ',
-ADD_Ledger_1                : 'Koble til din Ledger Nano S ',
+x_Ledger                    : 'Ledger Wallet ',
+ADD_Ledger_1                : 'Koble til din Ledger Wallet ',
 ADD_Ledger_2                : 'Åpne Ethereum-applikasjonen (eller kontraktsapplikasjonen) ',
 ADD_Ledger_3                : 'Sjekk at nettleserstøtte er aktivert i innstillingene. ',
 ADD_Ledger_4                : 'Hvis du ikke finner noen nettleserstøtte i innstillingene, sjekk at du har [Firmware >1.2](https://www.ledgerwallet.com/apps/manager) ',
 ADD_Ledger_0a               : 'Åpne MyEtherWallet på nytt på en sikker (SSL) forbindelse. ',
 ADD_Ledger_0b               : 'Åpne MyEtherWallet på nytt med [Chrome](https://www.google.com/chrome/browser/desktop/) eller [Opera](https://www.opera.com/) ',
-ADD_Ledger_scan             : 'Koble til Ledger Nano S ',
+ADD_Ledger_scan             : 'Koble til Ledger Wallet ',
+  
+ADD_MetaMask                : 'Connect to MetaMask ',
+
 x_Trezor                    : 'TREZOR ',
 ADD_Trezor_scan             : 'Koble til TREZOR ',
 ADD_Trezor_select           : 'Dette er en TREZOR seed ',
+x_DigitalBitbox             : 'Digital Bitbox ',
+ADD_DigitalBitbox_0a        : 'Åpne MyEtherWallet på nytt på en sikker (SSL) forbindelse. ',
+ADD_DigitalBitbox_0b        : 'Åpne MyEtherWallet på nytt med [Chrome](https://www.google.com/chrome/browser/desktop/) eller [Opera](https://www.opera.com/) ',
+ADD_DigitalBitbox_scan      : 'Connect your Digital Bitbox ',
 
 /* Generate Wallets */
 GEN_desc                    : 'Hvis du vil opprette flere lommebøker, kan du gjøre det her ',
@@ -305,6 +320,7 @@ SWAP_rec_add                : "Din mottakeradresse ",
 SWAP_start_CTA              : "Start byttet ",
 SWAP_ref_num                : "Ditt referansenummer ",
 SWAP_time                   : "Gjenstående tid til å sende ",
+SWAP_elapsed				        : "Time elapsed since sent ",
 SWAP_progress_1             : "Ordre initiert ",
 SWAP_progress_2             : "Venter på dine ", // Waiting for your BTC...
 SWAP_progress_3             : "Mottatt! ", // ETH Received!
@@ -334,6 +350,8 @@ MYWAL_Content_3             : 'Hvis du ønsker å bruke denne lommeboken med din
 VIEWWALLET_Subtitle         : 'Dette gir deg muligheten til å laste ned ulike versjoner av private nøkler og skrive ut papirlommeboken din på nytt. Du vil kanskje gjøre dette for å [importere kontoen din til Geth/Mist](http://ethereum.stackexchange.com/questions/465/how-to-import-a-plain-private-key-into-geth/). Hvis du bare ønsker å sjekke saldoen din, anbefaler vi at du bruker en "blockchain explorer" som f.eks. [etherscan.io](http://etherscan.io/). ',
 VIEWWALLET_Subtitle_Short   : 'Dette gir deg muligheten til å laste ned ulike versjoner av private nøkler og skrive ut papirlommeboken din på nytt. ',
 VIEWWALLET_SuccessMsg       : 'Suksess! Her er detaljene om din lommebok. ',
+VIEWWALLET_ShowPrivKey      : '(show)',
+VIEWWALLET_HidePrivKey      : '(hide)',
 
 /* Chrome Extension */
 CX_error_1                  : 'Du har ennå ikke lagret noen lommebok. Klikk ["Legg til lommebok"](/cx-wallet.html#add-wallet) for å legge til en! ',
@@ -376,6 +394,8 @@ ERROR_32                    : 'Kunne ikke bytte node eller koble til noden du va
 ERROR_33                    : 'Lommeboken du har låst opp stemmer ikke overens med eierens adresse. ', // 33
 ERROR_34                    : 'Navnet du prøver å avsløre er ikke likt navnet du har tastet inn. ', // 34
 ERROR_35                    : 'Input-adressen har ingen sjekk-sum. <a href="https://myetherwallet.groovehq.com/knowledge_base/topics/not-checksummed-shows-when-i-enter-an-address" target="_blank" rel="noopener"> More info</a>', // 35
+ERROR_36                    : 'Enter valid TX hash', // 36
+ERROR_37                    : 'Enter valid hex string (0-9, a-f)', // 37
 
 SUCCESS_1                   : 'Gyldig adresse ',
 SUCCESS_2                   : 'Dekrypteringen av lommeboken var vellykket ',
@@ -410,8 +430,8 @@ PARITY_InvalidGasLimit      : "Tilført mengde gas er over grensen.",
 /* Tranlsation Info */
 translate_version           : '0.4 ',
 Translator_Desc             : 'Takk til oversetterne våre ',
-TranslatorName_1            : '[mrstormlars](https://www.myetherwallet.com/?gaslimit=21000&to=0x6Dd9530b2Cb8B2d7d9f7D5D898b6456EC5D94f08&value=1.0#send-transaction) ',
-TranslatorAddr_1            : '0x6Dd9530b2Cb8B2d7d9f7D5D898b6456EC5D94f08 ',
+TranslatorName_1            : '[mrstormlars](https://www.myetherwallet.com/?gaslimit=21000&to=mrstormlars.eth&value=1.0#send-transaction) ',
+TranslatorAddr_1            : '',
 /* Translator 1             : Insert Comments Here */
 TranslatorName_2            : '',
 TranslatorAddr_2            : '',
@@ -458,7 +478,7 @@ HELP_2a_Desc_6              : 'Husk at du må unngå tap av nøklene og passorde
 
 HELP_2b_Title               : '2b) Hvordan kan jeg lagre ether sikkert / offline / "kaldt" med MyEtherWallet? ',
 HELP_2b_Desc_1              : 'Gå til vår github: [https://github.com/kvhnuke/etherwallet/releases/latest](https://github.com/kvhnuke/etherwallet/releases/latest). ',
-HELP_2b_Desc_2              : 'Klikk `dist-vX.X.X.X.zip`. ',
+HELP_2b_Desc_2              : 'Klikk `etherwallet-vX.X.X.X.zip`. ',
 HELP_2b_Desc_3              : 'Flytt zip-fila til en frakoblet datamaskin. ',
 HELP_2b_Desc_4              : 'Pakk ut zip-fila (unzip) og dobbeltklikk `index.html`. ',
 HELP_2b_Desc_5              : 'Opprett en lommebok med et sterkt passord. ',

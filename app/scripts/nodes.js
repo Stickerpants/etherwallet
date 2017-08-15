@@ -2,13 +2,17 @@
 var nodes = function() {}
 nodes.customNode = require('./nodeHelpers/customNode');
 nodes.infuraNode = require('./nodeHelpers/infura');
+nodes.metamaskNode = require('./nodeHelpers/metamask');
 nodes.nodeTypes = {
     ETH: "ETH",
     ETC: "ETC",
+    MUS: "MUSIC",
     Ropsten: "ROPSTEN ETH",
     Kovan: "KOVAN ETH",
     Rinkeby: "RINKEBY ETH",
     RSK: "RSK",
+    EXP: "EXP",
+    UBQ: "UBQ",
     Custom: "CUSTOM ETH"
 };
 nodes.ensNodeTypes = [nodes.nodeTypes.ETH, nodes.nodeTypes.Ropsten];
@@ -145,7 +149,59 @@ nodes.nodeList = {
         'estimateGas': true,
         'service': 'GK2.sk',
         'lib': new nodes.customNode('https://rsk-test.gk2.sk/', '')
+    },
+    'exp': {
+        'name': 'EXP',
+        'blockExplorerTX': 'http://www.gander.tech/tx/[[txHash]]',
+        'blockExplorerAddr': 'http://www.gander.tech/address/[[address]]',
+        'type': nodes.nodeTypes.EXP,
+        'eip155': true,
+        'chainId': 2,
+        'tokenList': require('./tokens/expTokens.json'),
+        'abiList': require('./abiDefinitions/expAbi.json'),
+        'estimateGas': true,
+        'service': 'Expanse.tech',
+        'lib': new nodes.customNode('https://node.expanse.tech/', '')
+    },
+    'music_tfarm': {
+        'name': 'MUSIC',
+        'blockExplorerTX': 'https://orbiter.musicoin.org/tx/[[txHash]]',
+        'blockExplorerAddr': 'https://orbiter.musicoin.org/addr/[[address]]',
+        'type': nodes.nodeTypes.MUS,
+        'eip155': false,
+        'chainId': 7762959,
+        'tokenList': require('./tokens/musicTokens.json'),
+        'abiList': require('./abiDefinitions/musicAbi.json'),
+        'service': 'trustfarm.io',
+        'lib': new nodes.customNode('https://mcdnode.trustfarm.io/api', '')
+    },
+    'music_twmc': {
+        'name': 'MUSIC',
+        'blockExplorerTX': 'https://orbiter.musicoin.org/tx/[[txHash]]',
+        'blockExplorerAddr': 'https://orbiter.musicoin.org/addr/[[address]]',
+        'type': nodes.nodeTypes.MUS,
+        'eip155': false,
+        'chainId': 7762959,
+        'tokenList': require('./tokens/musicTokens.json'),
+        'abiList': require('./abiDefinitions/musicAbi.json'),
+        'service': 'pool.musicoin.tw',
+        'lib': new nodes.customNode('https://mewapi.musicoin.tw', '')
+    },
+    'ubq': {
+        'name': 'UBQ',
+        'blockExplorerTX': 'https://ubiqscan.io/en/tx/[[txHash]]',
+        'blockExplorerAddr': 'https://ubiqscan.io/en/address/[[address]]',
+        'type': nodes.nodeTypes.UBQ,
+        'eip155': true,
+        'chainId': 8,
+        'tokenList': require('./tokens/ubqTokens.json'),
+        'abiList': require('./abiDefinitions/ubqAbi.json'),
+        'estimateGas': true,
+        'service': 'ubiqscan.io',
+        'lib': new nodes.customNode('https://rpc1.ubiqscan.io', '')
     }
 };
+
+
 nodes.ethPrice = require('./nodeHelpers/ethPrice');
 module.exports = nodes;

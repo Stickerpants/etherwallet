@@ -100,7 +100,8 @@ x_JsonDesc                  : 'Ini adalah "Private Key" Anda dalam format JSON y
 x_Keystore                  : 'File Keystore (UTC / JSON · Format yang direkomendasikan · Ter-enkripsi) ',
 x_Keystore2                 : 'File Keystore (UTC / JSON) ',
 x_KeystoreDesc              : 'File Keystore ini sesuai dengan format yang dipakai Mist sehingga memudahkan untuk diimpor di kemudian hari. File ini yang disarankan untuk di unduh dan di backup. ',
-x_Ledger                    : 'Ledger Nano S ',
+x_Ledger                    : 'Ledger Wallet ',
+x_MetaMask                  : 'Metamask / Mist ',
 x_Mnemonic                  : '"Mnemonic Phrase" ',
 x_ParityPhrase              : 'Parity Phrase ',
 x_Password                  : 'Password ',
@@ -137,6 +138,8 @@ sidebar_TransHistory        : 'Sejarah Transaksi ',
 sidebar_donation            : 'MyEtherWallet dapat dipergunakan secara cuma-cuma berdasarkan prinsip open source dengan tetap menjaga privasi dan keamanan. Semakin banyak donasi yang kami terima, semakin banyak waktu yang kami dapat luangkan untuk membuat fitur-fitur baru dan mewujudkan usulan dan keinginan para penggunanya. Tim kami yang terdiri dari hanya dua orang sangat membutuhkan dukungan Anda untuk mewujudkan cita-cita kami dalam membuat dunia yang semakin baik ',
 sidebar_donate              : 'Kirim Donasi ',
 sidebar_thanks              : 'Terima Kasih!!! ',
+sidebar_DisplayOnTrezor     : 'Display address on TREZOR',
+sidebar_DisplayOnLedger     : 'Display address on Ledger',
 
 /* Decrypt Panel */
 decrypt_Access              : 'Pilihan cara mengakses dompet Anda? ',
@@ -153,6 +156,10 @@ ADD_Radio_3                 : 'Paste/Ketik Private Key Anda ',
 ADD_Radio_4                 : 'Tambah akun untuk dilihat ',
 ADD_Radio_5                 : 'Paste/Ketik Mnemonic Anda ',
 ADD_Radio_5_Path            : 'Select HD derivation path ',
+ADD_Radio_5_woTrezor        : '(Jaxx, Metamask, Exodus, imToken)',
+ADD_Radio_5_withTrezor      : '(Jaxx, Metamask, Exodus, imToken, TREZOR)',
+ADD_Radio_5_PathAlternative : '(Ledger)',
+ADD_Radio_5_PathTrezor      : '(TREZOR)',
 ADD_Radio_5_PathCustom      : 'Custom',
 ADD_Label_2                 : 'Buat Alias: ',
 ADD_Label_3                 : 'File Dompet anda ter-enkripsi. Masukkan password ',
@@ -162,6 +169,7 @@ ADD_Label_5                 : 'Masukkan alamat ',
 ADD_Label_6                 : 'Unlock dompet ',
 ADD_Label_6_short           : 'Unlock ',
 ADD_Label_7                 : 'Tambah Akun ',
+ADD_Label_8                 : 'Password (optional): ',
 
 /* Mnemonic */
 MNEM_1                      : 'Pilih alamat yang Anda inginkan untuk berinteraksi. ',
@@ -170,16 +178,23 @@ MNEM_more                   : 'Tampilkan Alamat berikutnya ',
 MNEM_prev                   : 'Tampilkan Alamat sebelumnya ',
 
 /* Hardware wallets */
-ADD_Ledger_1                : 'Hubungkan ke Ledger Nano S Anda ',
+ADD_Ledger_1                : 'Hubungkan ke Ledger Wallet Anda ',
 ADD_Ledger_2                : 'Buka Aplikasi Ethereum (atau aplikasi kontrak) ',
 ADD_Ledger_3                : 'Periksa bahwa "Browser Support" sudah di aktifkan di "Settings" ',
 ADD_Ledger_4                : 'Jika "Browser Support" tidak ditemukan di "Settings", pastikan sudah mengupdate ke [Firmware >1.2](https://www.ledgerwallet.com/apps/manager) ',
 ADD_Ledger_0a               : 'Buka kembali MyEtherWallet melalui koneksi (SSL) yang aman ',
 ADD_Ledger_0b               : 'Buka kembali MyEtherWallet menggunakan [Chrome](https://www.google.com/chrome/browser/desktop/) atau [Opera](https://www.opera.com/) ',
-ADD_Ledger_scan             : 'Hubungkan ke Ledger Nano S ',
+ADD_Ledger_scan             : 'Hubungkan ke Ledger Wallet ',
+  
+ADD_MetaMask                : 'Connect to MetaMask ',
+
 x_Trezor                    : 'TREZOR ',
 ADD_Trezor_scan             : 'Hubungkan ke TREZOR ',
 ADD_Trezor_select           : 'Ini adalah TREZOR seed ',
+x_DigitalBitbox             : 'Digital Bitbox ',
+ADD_DigitalBitbox_0a        : 'Buka kembali MyEtherWallet melalui koneksi (SSL) yang aman ',
+ADD_DigitalBitbox_0b        : 'Buka kembali MyEtherWallet menggunakan [Chrome](https://www.google.com/chrome/browser/desktop/) atau [Opera](https://www.opera.com/) ',
+ADD_DigitalBitbox_scan      : 'Hubungkan ke Digital Bitbox ',
 
 /* Generate Wallets */
 GEN_desc                    : 'Jika Anda memerlukan lebih dari satu dompet, Anda dapat memakai fitur ',
@@ -293,6 +308,8 @@ MYWAL_Content_3             : 'Jika Anda akan memakai dompet ini dengan MyEtherW
 VIEWWALLET_Subtitle         : 'Memungkinkan Anda untuk mencetak Dompet Kertas dari berbagai format atau versi "private key". Hal ini diperlukan pada saat anda ingin [mengimpor akun Anda ke Geth/Mist](http://ethereum.stackexchange.com/questions/465/how-to-import-a-plain-private-key-into-geth/). Jika Anda hanya ingin pengecekan saldo, pakailah salah satu layanan blockchain explorer seperti [etherscan.io](http://etherscan.io/). ',
 VIEWWALLET_Subtitle_Short   : 'Untuk pencetakan Dompet Kertas dari berbagai format "private key". ',
 VIEWWALLET_SuccessMsg       : 'Berhasil! Berikut detil dari dompet Anda. ',
+VIEWWALLET_ShowPrivKey      : '(show)',
+VIEWWALLET_HidePrivKey      : '(hide)',
 
 /* Chrome Extension */
 CX_error_1                  : 'Anda tidak memiliki Dompet yang disimpan sebelumnya. Klik ["Buat Dompet"](/cx-wallet.html#add-wallet) untuk membuatnya! ',
@@ -333,6 +350,7 @@ SWAP_rec_add                : "Alamat penerima Anda ",
 SWAP_start_CTA              : "Tukarkan ",
 SWAP_ref_num                : "Nomor referensi Anda ",
 SWAP_time                   : "Sisa waktu untuk mengirim ",
+SWAP_elapsed				        : "Time elapsed since sent ",
 SWAP_progress_1             : "Perintah Dijalankan ",
 SWAP_progress_2             : "Menunggu ", // Waiting for your BTC...
 SWAP_progress_3             : "Diterima! ", // ETH Received!
@@ -378,6 +396,8 @@ ERROR_32                    : 'Could not connect to the node. Refresh your page,
 ERROR_33                    : 'The wallet you have unlocked does not match the owner\'s address. ', // 33
 ERROR_34                    : 'The name you are attempting to reveal does not match the name you have entered. ', // 34
 ERROR_35                    : 'Input address is not checksummed. <a href="https://myetherwallet.groovehq.com/knowledge_base/topics/not-checksummed-shows-when-i-enter-an-address" target="_blank" rel="noopener"> More info</a>', // 35
+ERROR_36                    : 'Enter valid TX hash', // 36
+ERROR_37                    : 'Enter valid hex string (0-9, a-f)', // 37
 
 SUCCESS_1                   : 'Alamat valid ',
 SUCCESS_2                   : 'Dompet telah ter-dekripsi ',
@@ -459,7 +479,7 @@ HELP_2a_Desc_6              : 'Keep in mind, you must prevent loss of the keys a
 
 HELP_2b_Title               : '2b) How do I safely / offline / cold storage with MyEtherWallet? ',
 HELP_2b_Desc_1              : 'Go to [https://github.com/kvhnuke/etherwallet/releases/latest](https://github.com/kvhnuke/etherwallet/releases/latest). ',
-HELP_2b_Desc_2              : 'Click on `dist-vX.X.X.X.zip`. ',
+HELP_2b_Desc_2              : 'Click on `etherwallet-vX.X.X.X.zip`. ',
 HELP_2b_Desc_3              : 'Move zip to an airgapped computer. ',
 HELP_2b_Desc_4              : 'Unzip it and double-click `index.html`. ',
 HELP_2b_Desc_5              : 'Generate a wallet with a strong password. ',
